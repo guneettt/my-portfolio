@@ -155,20 +155,20 @@ const Portfolio = () => {
 
       {/* Side Social Links - Only show on xl screens and up */}
       <div className="fixed left-12 bottom-0 hidden xl:block">
-        <div className="flex flex-col items-center space-y-8">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-all duration-300 hover:-translate-y-2 transform">
-            <Github size={28} />
+        <div className="flex flex-col items-center space-y-6">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+            <Github size={22} />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-all duration-300 hover:-translate-y-2 transform">
-            <Instagram size={28} />
+          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+            <Instagram size={22} />
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-all duration-300 hover:-translate-y-2 transform">
-            <Twitter size={28} />
+          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+            <Twitter size={22} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-all duration-300 hover:-translate-y-2 transform">
-            <Linkedin size={28} />
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+            <Linkedin size={22} />
           </a>
-          <div className="w-px h-28 bg-gray-500"></div>
+          <div className="w-px h-20 bg-gray-600"></div>
         </div>
       </div>
 
@@ -177,12 +177,12 @@ const Portfolio = () => {
         <div className="flex flex-col items-center">
           <a 
             href="mailto:guneet4@ualberta.ca" 
-            className="text-gray-300 hover:text-white transition-all duration-300 hover:-translate-y-2 transform font-mono text-base"
+            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform font-mono text-sm"
             style={{ writingMode: 'vertical-rl' }}
           >
             guneet4@ualberta.ca
           </a>
-          <div className="w-px h-28 bg-gray-500 mt-8"></div>
+          <div className="w-px h-20 bg-gray-600 mt-6"></div>
         </div>
       </div>
 
@@ -407,41 +407,48 @@ const Portfolio = () => {
           title: "Signal Vault",
           description: "A robust offline-first search engine designed for emergency scenarios when internet connectivity is compromised. The system maintains critical information accessibility through intelligent localStorage caching, delivering lightning-fast search responses that are 90% faster than traditional methods.",
           tech: ["Python", "JavaScript", "HTML/CSS", "Node.js"],
-          status: "In Development"
+          status: "In Development",
+          demoUrl: "#", // Add your live demo URL here when deployed
+          githubUrl: "https://github.com/guneettt/signal-vault"
         },
         {
           title: "SWC Automotive Platform",
           description: "A comprehensive automotive business solution featuring dynamic inventory management and customer engagement tools. Built with modern React architecture and seamlessly integrated with Firebase CMS, enabling real-time content updates without technical expertise.",
           tech: ["React", "Tailwind CSS", "Firebase"],
-          status: "Client Project"
+          status: "Client Project",
+          demoUrl: "#", // Add your live demo URL here
+          githubUrl: "#" // Add your GitHub URL here
         },
         {
           title: "Bias Visualizer Extension",
           description: "An intelligent Chrome extension that analyzes media bias by cross-referencing trending topics across Google Trends and Reddit. Features a high-performance FastAPI backend capable of processing 500 queries per second with interactive data visualizations powered by D3.js.",
-          tech: ["JavaScript", "HTML/CSS", "FastAPI", "Python", "D3.js"]
+          tech: ["JavaScript", "HTML/CSS", "FastAPI", "Python", "D3.js"],
+          demoUrl: "#", // Add your live demo URL here
+          githubUrl: "#" // Add your GitHub URL here
         },
         {
           title: "Photorealistic Ray Tracer",
           description: "A high-performance 3D rendering engine built from scratch in C, supporting multiple geometric primitives and realistic Phong lighting models. Optimized algorithms achieve sub-20ms frame rendering while reducing computational overhead by 35% through advanced ray-intersection techniques.",
-          tech: ["C", "Makefile", "Computer Graphics", "Linear Algebra"]
+          tech: ["C", "Makefile", "Computer Graphics", "Linear Algebra"],
+          demoUrl: "#", // Add your live demo URL here
+          githubUrl: "#" // Add your GitHub URL here
         },
         {
           title: "Scalable Tweet Analytics Engine",
           description: "A high-throughput database system engineered to handle massive social media datasets. Features custom MongoDB schemas optimized for tweet storage and retrieval, with automated Python pipelines capable of processing datasets up to 50MB while maintaining 60% faster query performance.",
-          tech: ["Python", "SQL", "MongoDB", "JSON", "Data Processing"]
+          tech: ["Python", "SQL", "MongoDB", "JSON", "Data Processing"],
+          demoUrl: "#", // Add your live demo URL here
+          githubUrl: "#" // Add your GitHub URL here
         },
         {
           title: "TrustLine - AI Fraud Detection",
           description: "An award-winning mobile application that leverages machine learning to detect deepfake audio in real-time phone calls. This innovative security solution addresses the growing threat of AI-generated fraud, earning first place recognition and substantial seed funding for continued development.",
           tech: ["React Native", "FastAPI", "Machine Learning", "Audio Processing"],
-          status: "Award Winner"
+          status: "Award Winner",
+          demoUrl: "#", // Add your live demo URL here
+          githubUrl: "#" // Add your GitHub URL here
         }
       ].map((project, index) => {
-        // Create unique placeholder URLs for each project
-        const projectSlug = project.title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-        const demoUrl = `https://your-demo-url.com/${projectSlug}`;
-        const githubUrl = `https://github.com/yourusername/${projectSlug}`;
-        
         return (
         <div key={index} className="group relative">
           <div className="bg-gray-900 border border-gray-700 rounded-lg p-8 hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-white/10">
@@ -455,10 +462,10 @@ const Portfolio = () => {
                 )}
               </div>
               <div className="flex space-x-4">
-                <a href={demoUrl} title="Live Demo" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href={project.demoUrl} title="Live Demo" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={20} />
                 </a>
-                <a href={githubUrl} title="GitHub Repository" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                <a href={project.githubUrl} title="GitHub Repository" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                   <Github size={20} />
                 </a>
               </div>
