@@ -160,43 +160,52 @@ const Portfolio = () => {
       </nav>
 
       {/* Side Social Links - Only show on xl screens and up */}
-      <div className="fixed left-12 bottom-0 hidden xl:block">
-        <div className="flex flex-col items-center space-y-6">
-          <a
-            href="https://github.com/guneettt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
-          >
-            <Github size={22} />
-          </a>
-          <a
-            href="https://instagram.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
-          >
-            <Instagram size={22} />
-          </a>
-          <a
-            href="https://twitter.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
-          >
-            <Twitter size={22} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/guneet03/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
-          >
-            <Linkedin size={22} />
-          </a>
-          <div className="w-px h-20 bg-gray-600"></div>
-        </div>
-      </div>
+<div className="fixed left-12 bottom-0 hidden xl:block">
+  <div className="flex flex-col items-center space-y-6">
+
+    {/* GitHub */}
+    <a
+      href="https://github.com/guneettt"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+    >
+      <Github size={22} />
+    </a>
+
+    {/* Email */}
+    <a
+      href="mailto:guneet4@ualberta.ca"
+      className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 0 1-2 2H4a2 
+                 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm8 7 8-5H4l8 5zm0 
+                 2-8-5v10h16V8l-8 5z" />
+      </svg>
+    </a>
+
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/in/itsguneettt"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+    >
+      <Linkedin size={22} />
+    </a>
+
+    <div className="w-px h-20 bg-gray-600"></div>
+  </div>
+</div>
+
+
 
       {/* Side Email - Only show on xl screens and up */}
       <div className="fixed right-12 bottom-0 hidden xl:block">
@@ -206,7 +215,7 @@ const Portfolio = () => {
             className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform font-mono text-sm"
             style={{ writingMode: 'vertical-rl' }}
           >
-            guneet4@ualberta.ca
+            guneet4[at]ualberta[dot]ca
           </a>
           <div className="w-px h-20 bg-gray-600 mt-6"></div>
         </div>
