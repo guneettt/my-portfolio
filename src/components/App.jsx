@@ -4,7 +4,7 @@ import { Github, Instagram, Twitter, Linkedin, ExternalLink, Menu, X } from 'luc
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const [activeExperience, setActiveExperience] = useState('iit-goa');
+  const [activeExperience, setActiveExperience] = useState('ur2phd');
   const [typedText, setTypedText] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
@@ -114,7 +114,10 @@ const Portfolio = () => {
                     {item.label}
                   </button>
                 ))}
-                <a href="#" className="ml-4 px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition-colors font-mono text-sm inline-block text-center">
+                <a
+                  href="/resume.pdf"
+                  className="ml-4 px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition-colors font-mono text-sm inline-block text-center"
+                >
                   Resume
                 </a>
               </div>
@@ -145,7 +148,10 @@ const Portfolio = () => {
                   {item.label}
                 </button>
               ))}
-              <a href="#" className="block px-3 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition-colors font-mono text-sm mx-3 mt-4 text-center">
+              <a
+                href="/resume.pdf"
+                className="block px-3 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition-colors font-mono text-sm mx-3 mt-4 text-center"
+              >
                 Resume
               </a>
             </div>
@@ -156,16 +162,36 @@ const Portfolio = () => {
       {/* Side Social Links - Only show on xl screens and up */}
       <div className="fixed left-12 bottom-0 hidden xl:block">
         <div className="flex flex-col items-center space-y-6">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+          <a
+            href="https://github.com/guneettt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+          >
             <Github size={22} />
           </a>
-          <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+          <a
+            href="https://instagram.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+          >
             <Instagram size={22} />
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+          <a
+            href="https://twitter.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+          >
             <Twitter size={22} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform">
+          <a
+            href="https://www.linkedin.com/in/guneet03/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1 transform"
+          >
             <Linkedin size={22} />
           </a>
           <div className="w-px h-20 bg-gray-600"></div>
@@ -195,20 +221,32 @@ const Portfolio = () => {
               <p className="font-mono text-white mb-6 text-lg sm:text-xl">
                 Hi, my name is
               </p>
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: '"Inter", sans-serif' }}>
+              <h1
+                className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight"
+                style={{ fontFamily: '"Inter", sans-serif' }}
+              >
                 Guneet.
               </h1>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-500 mb-10 leading-tight" style={{ fontFamily: '"Inter", sans-serif' }}>
+              <h2
+                className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-500 mb-10 leading-tight"
+                style={{ fontFamily: '"Inter", sans-serif' }}
+              >
                 {typedText}
                 {!isTypingComplete && <span className="animate-pulse">|</span>}
               </h2>
-              <p className="text-gray-300 text-xl max-w-3xl leading-relaxed mb-16" style={{ fontFamily: '"Inter", sans-serif' }}>
+              <p
+                className="text-gray-300 text-xl max-w-3xl leading-relaxed mb-16"
+                style={{ fontFamily: '"Inter", sans-serif' }}
+              >
                 I'm a 3rd year Computer Science student at the University of Alberta 
                 specializing in building exceptional digital experiences. Currently, 
                 I'm focused on learning modern web development and creating projects 
                 that solve real-world problems.
               </p>
-              <a href="#work" className="inline-flex items-center px-10 py-5 border border-white text-white rounded hover:bg-white hover:text-black transition-all font-mono text-base hover:-translate-y-1 transform">
+              <a
+                href="#work"
+                className="inline-flex items-center px-10 py-5 border border-white text-white rounded hover:bg-white hover:text-black transition-all font-mono text-base hover:-translate-y-1 transform"
+              >
                 Check out my projects!
               </a>
             </div>
@@ -216,72 +254,71 @@ const Portfolio = () => {
         </section>
 
         {/* About Section */}
-<section id="about" className="py-32 px-4 sm:px-6 lg:px-8 bg-black">
-  <div className="max-w-4xl mx-auto text-center">
-    <h3
-      className="flex items-center justify-center text-2xl font-bold text-white mb-8"
-      style={{ fontFamily: '"Inter", sans-serif' }}
-    >
-      <span className="font-mono text-white text-lg mr-2">01.</span>
-      About Me
-      <div className="ml-4 h-px bg-gray-600 flex-1 max-w-xs"></div>
-    </h3>
+        <section id="about" className="py-32 px-4 sm:px-6 lg:px-8 bg-black">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3
+              className="flex items-center justify-center text-2xl font-bold text-white mb-8"
+              style={{ fontFamily: '"Inter", sans-serif' }}
+            >
+              <span className="font-mono text-white text-lg mr-2">01.</span>
+              About Me
+              <div className="ml-4 h-px bg-gray-600 flex-1 max-w-xs"></div>
+            </h3>
 
-    <div
-      className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto"
-      style={{ fontFamily: '"Inter", sans-serif' }}
-    >
-      <p>
-        Hello! I’m Guneet, a Computer Science undergraduate at the University of
-        Alberta with a passion for building software that solves real-world
-        problems. I first got into programming in 2019, and since then I’ve
-        explored everything from mobile apps to full-stack web development,
-        machine learning, and even low-level systems like RISC-V assembly.
-      </p>
+            <div
+              className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto"
+              style={{ fontFamily: '"Inter", sans-serif' }}
+            >
+              <p>
+                Hello! I’m Guneet, a Computer Science undergraduate at the University of
+                Alberta with a passion for building software that solves real-world
+                problems. I first got into programming in 2019, and since then I’ve
+                explored everything from mobile apps to full-stack web development,
+                machine learning, and even low-level systems like RISC-V assembly.
+              </p>
 
-      <p>
-        These days, I’m especially focused on creating practical, user-friendly
-        applications — whether that’s{' '}
-        <span className="text-white font-semibold">scam-call protection with AI</span>,{' '}
-        <span className="text-white font-semibold">offline search tools for emergencies</span>, or{' '}
-        <span className="text-white font-semibold">cloud-connected survey apps</span>.
-        I enjoy tackling challenges that mix creativity with problem-solving and
-        love learning new technologies along the way.
-      </p>
+              <p>
+                These days, I’m especially focused on creating practical, user-friendly
+                applications — whether that’s{' '}
+                <span className="text-white font-semibold">scam-call protection with AI</span>,{' '}
+                <span className="text-white font-semibold">offline search tools for emergencies</span>, or{' '}
+                <span className="text-white font-semibold">cloud-connected survey apps</span>.
+                I enjoy tackling challenges that mix creativity with problem-solving and
+                love learning new technologies along the way.
+              </p>
 
-      <p>
-        I’m also diving deeper into{' '}
-        <span className="text-white font-semibold">full-stack and cross-platform development</span>,
-        while keeping an eye on modern best practices and how to build software
-        that’s not just functional, but impactful.
-      </p>
+              <p>
+                I’m also diving deeper into{' '}
+                <span className="text-white font-semibold">full-stack and cross-platform development</span>,
+                while keeping an eye on modern best practices and how to build software
+                that’s not just functional, but impactful.
+              </p>
 
-      <p className="mb-8">
-        Here are a few technologies I’ve been working with recently:
-      </p>
-    </div>
+              <p className="mb-8">
+                Here are a few technologies I’ve been working with recently:
+              </p>
+            </div>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-8 max-w-2xl mx-auto">
-      {[
-        'JavaScript (ES6+)',
-        'TypeScript',
-        'React',
-        'Node.js',
-        'React Native',
-        'FastAPI',
-        'Python',
-        'Java',
-        'SQL'
-      ].map((tech) => (
-        <div key={tech} className="flex items-center justify-center">
-          <span className="text-white mr-2">▶</span>
-          <span className="font-mono text-sm text-gray-300">{tech}</span>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-8 max-w-2xl mx-auto">
+              {[
+                'JavaScript (ES6+)',
+                'TypeScript',
+                'React',
+                'Node.js',
+                'React Native',
+                'FastAPI',
+                'Python',
+                'Java',
+                'SQL'
+              ].map((tech) => (
+                <div key={tech} className="flex items-center justify-center">
+                  <span className="text-white mr-2">▶</span>
+                  <span className="font-mono text-sm text-gray-300">{tech}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Experience Section */}
 <section id="experience" className="py-32 px-4 sm:px-6 lg:px-8 bg-black">
@@ -296,16 +333,18 @@ const Portfolio = () => {
       <div className="lg:w-1/4">
         <div className="flex lg:flex-col overflow-x-auto lg:overflow-visible border-b lg:border-b-0 lg:border-l-2 border-gray-600">
           {[
+            { id: 'ur2phd', label: 'UR2PhD' },
+            { id: 'daylily', label: 'Daylily AI' },
             { id: 'iit-goa', label: 'IIT Goa' },
-            { id: 'ualberta', label: 'UAlberta' },
+            { id: 'ualberta', label: 'UAlberta TA' },
             { id: 'natignite', label: 'natIgnite' },
-            { id: 'devcon', label: 'DevCon' }
+            { id: 'devcon', label: 'DevCon' },
           ].map((company) => (
             <button
               key={company.id}
               onClick={() => setActiveExperience(company.id)}
               className={`px-6 py-4 text-left font-mono text-sm whitespace-nowrap transition-all duration-200 border-l-2 lg:border-l-2 lg:border-b-0 border-b-2 lg:border-b-0 ${
-                (activeExperience === company.id || (company.id === 'iit-goa' && (activeExperience === undefined || activeExperience === null)))
+                activeExperience === company.id
                   ? 'text-cyan-400 bg-gray-900/30 border-cyan-400'
                   : 'text-gray-400 hover:text-cyan-400 hover:bg-gray-900/20 border-transparent'
               }`}
@@ -315,9 +354,48 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
+
       {/* Tab Content */}
       <div className="lg:w-3/4">
-        {(activeExperience === 'iit-goa' || activeExperience === undefined || activeExperience === null) && (
+        {activeExperience === 'ur2phd' && (
+          <div className="space-y-6">
+            <h4 className="text-2xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
+              UR2PhD Scholar <span className="text-cyan-400">@ University of Alberta</span>
+            </h4>
+            <p className="text-gray-300 font-mono text-base">Sept 2025 — Present</p>
+            <ul className="space-y-4 text-gray-300 text-lg leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
+              <li className="flex items-start">
+                <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
+                Developing Python/C++ tools for TAR/ZIP analysis with content-defined chunking, targeting around 30% duplicate data reduction.
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
+                Researching deduplication algorithms with Dr. Paul Lu, culminating in a seminar and project report.
+              </li>
+            </ul>
+          </div>
+        )}
+
+        {activeExperience === 'daylily' && (
+          <div className="space-y-6">
+            <h4 className="text-2xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
+              Full Stack Developer <span className="text-cyan-400">@ Daylily AI</span>
+            </h4>
+            <p className="text-gray-300 font-mono text-base">Aug 2025 — Present</p>
+            <ul className="space-y-4 text-gray-300 text-lg leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
+              <li className="flex items-start">
+                <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
+                Collaborating with clients to gather requirements and translate them into tailored AI-driven web solutions.
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
+                Building and deploying full-stack features to enhance customer engagement and product scalability.
+              </li>
+            </ul>
+          </div>
+        )}
+
+        {activeExperience === 'iit-goa' && (
           <div className="space-y-6">
             <h4 className="text-2xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
               Research Intern <span className="text-cyan-400">@ IIT Goa</span>
@@ -326,33 +404,35 @@ const Portfolio = () => {
             <ul className="space-y-4 text-gray-300 text-lg leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Designed and implemented sophisticated control algorithms for advanced flow battery systems, optimizing energy storage efficiency and achieving a significant 25% reduction in energy loss during simulation testing
+                Developed 3+ control algorithms for flow battery management, reducing energy loss in simulations by about 25%.
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Contributed to cutting-edge research in programmable flow systems as part of a collaborative team, with findings being prepared for submission to prestigious IEEE journals
+                Collaborated on research for programmable flow systems, aiming for future IEEE publication.
               </li>
             </ul>
           </div>
         )}
+
         {activeExperience === 'ualberta' && (
           <div className="space-y-6">
             <h4 className="text-2xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
               Teaching Assistant <span className="text-cyan-400">@ University of Alberta</span>
             </h4>
-            <p className="text-gray-300 font-mono text-base">January 2025 — April 2025</p>
+            <p className="text-gray-300 font-mono text-base">Jan. 2025 — Present</p>
             <ul className="space-y-4 text-gray-300 text-lg leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Mentored and supported 400+ computer science students through comprehensive assignment grading and hands-on lab instruction, contributing to a measurable 15% improvement in overall student performance
+                Graded 400+ assignments and led 35 labs, contributing to a 15% improvement in student averages.
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Revolutionized the grading workflow by developing custom Python automation scripts, dramatically reducing feedback turnaround time from 4 days to just 1.5 days
+                Cut grading turnaround from 4 to about 1.5 days using Python automation scripts.
               </li>
             </ul>
           </div>
         )}
+
         {activeExperience === 'natignite' && (
           <div className="space-y-6">
             <h4 className="text-2xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -362,15 +442,16 @@ const Portfolio = () => {
             <ul className="space-y-4 text-gray-300 text-lg leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Architected and developed TrustLine, an innovative real-time deepfake detection system that identifies fraudulent phone calls using advanced machine learning models integrated with React Native and FastAPI
+                Built TrustLine, a real-time deepfake scam-call detector with React Native and FastAPI.
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Secured first place victory among 10+ competitive teams, earning $5,000 in seed funding and recognition for creating a solution to combat rising digital fraud
+                Won 1st place and $6,000 in seed funding at the Network for Applied Technology (NAT) AgeTech hackathon.
               </li>
             </ul>
           </div>
         )}
+
         {activeExperience === 'devcon' && (
           <div className="space-y-6">
             <h4 className="text-2xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -380,11 +461,11 @@ const Portfolio = () => {
             <ul className="space-y-4 text-gray-300 text-lg leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Engineered RideSafe, a sophisticated transit safety application leveraging Vision Transformer (ViT) technology for real-time threat detection and automated emergency response systems
+                Built RideSafe, a real-time transit safety app with ViT-based threat detection using React Native & Flask.
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-400 mr-4 mt-1 text-xl">▶</span>
-                Delivered a compelling live demonstration showcasing instantaneous threat detection capabilities, earning second place recognition in an intensive 36-hour development sprint
+                Earned 2nd place and a $1,000 cash prize at Edmonton Unlimited’s DevCon hackathon.
               </li>
             </ul>
           </div>
@@ -394,7 +475,7 @@ const Portfolio = () => {
   </div>
 </section>
 
-{/* Work Section */}
+        {/* Work Section */}
 <section id="work" className="py-32 px-4 sm:px-6 lg:px-8 bg-black">
   <div className="max-w-6xl mx-auto">
     <h3 className="flex items-center text-2xl font-bold text-white mb-8" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -405,84 +486,88 @@ const Portfolio = () => {
       {[
         {
           title: "Signal Vault",
-          description: "A robust offline-first search engine designed for emergency scenarios when internet connectivity is compromised. The system maintains critical information accessibility through intelligent localStorage caching, delivering lightning-fast search responses that are 90% faster than traditional methods.",
+          description:
+            "An offline-first search engine that supports emergency access for 100+ terms during outages, keeping critical information available when connectivity fails. Achieved roughly 90% faster search response via an optimized localStorage-based caching system.",
           tech: ["Python", "JavaScript", "HTML/CSS", "Node.js"],
           status: "In Development",
           demoUrl: "#", // Add your live demo URL here when deployed
           githubUrl: "https://github.com/guneettt/signal-vault"
         },
         {
-          title: "SWC Automotive Platform",
-          description: "A comprehensive automotive business solution featuring dynamic inventory management and customer engagement tools. Built with modern React architecture and seamlessly integrated with Firebase CMS, enabling real-time content updates without technical expertise.",
+          title: "SWC Website (Client)",
+          description:
+            "A responsive automotive website with 15+ dynamic pages across car listings and services. Integrated Firebase as a CMS so non-technical staff can perform real-time content updates without developer support.",
           tech: ["React", "Tailwind CSS", "Firebase"],
           status: "Client Project",
           demoUrl: "#", // Add your live demo URL here
-          githubUrl: "#" // Add your GitHub URL here
+          githubUrl: "https://github.com/guneettt" // replace with repo if public
         },
         {
-          title: "Bias Visualizer Extension",
-          description: "An intelligent Chrome extension that analyzes media bias by cross-referencing trending topics across Google Trends and Reddit. Features a high-performance FastAPI backend capable of processing 500 queries per second with interactive data visualizations powered by D3.js.",
-          tech: ["JavaScript", "HTML/CSS", "FastAPI", "Python", "D3.js"],
+          title: "Bias Visualizer Chrome Extension",
+          description:
+            "A Chrome extension that compares 30+ trending terms across Google Trends and Reddit to surface differences in how topics trend across platforms. Powered by a FastAPI backend that can process up to 500 queries per second for real-time text analysis.",
+          tech: ["JavaScript", "HTML/CSS", "FastAPI", "Python"],
           demoUrl: "#", // Add your live demo URL here
-          githubUrl: "#" // Add your GitHub URL here
+          githubUrl: "https://github.com/guneettt" // replace with extension repo if public
         },
         {
-          title: "Photorealistic Ray Tracer",
-          description: "A high-performance 3D rendering engine built from scratch in C, supporting multiple geometric primitives and realistic Phong lighting models. Optimized algorithms achieve sub-20ms frame rendering while reducing computational overhead by 35% through advanced ray-intersection techniques.",
-          tech: ["C", "Makefile", "Computer Graphics", "Linear Algebra"],
-          demoUrl: "#", // Add your live demo URL here
-          githubUrl: "#" // Add your GitHub URL here
-        },
-        {
-          title: "Scalable Tweet Analytics Engine",
-          description: "A high-throughput database system engineered to handle massive social media datasets. Features custom MongoDB schemas optimized for tweet storage and retrieval, with automated Python pipelines capable of processing datasets up to 50MB while maintaining 60% faster query performance.",
-          tech: ["Python", "SQL", "MongoDB", "JSON", "Data Processing"],
-          demoUrl: "#", // Add your live demo URL here
-          githubUrl: "#" // Add your GitHub URL here
-        },
-        {
-          title: "TrustLine - AI Fraud Detection",
-          description: "An award-winning mobile application that leverages machine learning to detect deepfake audio in real-time phone calls. This innovative security solution addresses the growing threat of AI-generated fraud, earning first place recognition and substantial seed funding for continued development.",
-          tech: ["React Native", "FastAPI", "Machine Learning", "Audio Processing"],
-          status: "Award Winner",
-          demoUrl: "#", // Add your live demo URL here
-          githubUrl: "#" // Add your GitHub URL here
+          title: "3D Ray Tracing Renderer",
+          description:
+            "A ray tracing engine written in C that supports 7+ object types and realistic lighting, optimized to render frames in under 20ms. Uses efficient ray–object intersection logic and Makefile-based builds for clean compilation.",
+          tech: ["C", "Makefile"],
+          demoUrl: "#", // Add link to sample renders or repo README
+          githubUrl: "https://github.com/guneettt" // replace with ray tracer repo if public
         }
       ].map((project, index) => {
         return (
-        <div key={index} className="group relative">
-          <div className="bg-gray-900 border border-gray-700 rounded-lg p-8 hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-white/10">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3">
-                <h4 className="text-xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>{project.title}</h4>
-                {project.status && (
-                  <span className="text-xs font-mono bg-cyan-400/20 text-cyan-400 px-2 py-1 rounded">
-                    {project.status}
+          <div key={index} className="group relative">
+            <div className="bg-gray-900 border border-gray-700 rounded-lg p-8 hover:transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-white/10">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <h4 className="text-xl font-semibold text-white" style={{ fontFamily: '"Inter", sans-serif' }}>
+                    {project.title}
+                  </h4>
+                  {project.status && (
+                    <span className="text-xs font-mono bg-cyan-400/20 text-cyan-400 px-2 py-1 rounded">
+                      {project.status}
+                    </span>
+                  )}
+                </div>
+                <div className="flex space-x-4">
+                  <a
+                    href={project.demoUrl}
+                    title="Live Demo"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink size={20} />
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    title="GitHub Repository"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={20} />
+                  </a>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-4" style={{ fontFamily: '"Inter", sans-serif' }}>
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {project.tech.map((tech) => (
+                  <span key={tech} className="font-mono text-sm text-gray-300 bg-gray-800 border border-gray-600 px-3 py-1 rounded">
+                    {tech}
                   </span>
-                )}
+                ))}
               </div>
-              <div className="flex space-x-4">
-                <a href={project.demoUrl} title="Live Demo" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink size={20} />
-                </a>
-                <a href={project.githubUrl} title="GitHub Repository" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                  <Github size={20} />
-                </a>
-              </div>
-            </div>
-            <p className="text-gray-300 mb-4" style={{ fontFamily: '"Inter", sans-serif' }}>
-              {project.description}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {project.tech.map((tech) => (
-                <span key={tech} className="font-mono text-sm text-gray-300 bg-gray-800 border border-gray-600 px-3 py-1 rounded">
-                  {tech}
-                </span>
-              ))}
             </div>
           </div>
-        </div>
-      )})}
+        );
+      })}
     </div>
   </div>
 </section>
@@ -491,13 +576,21 @@ const Portfolio = () => {
         <section id="contact" className="py-32 px-4 sm:px-6 lg:px-8 bg-black text-white">
           <div className="max-w-2xl mx-auto text-center">
             <p className="font-mono text-white mb-4">04. What's Next?</p>
-            <h3 className="text-4xl font-bold text-white mb-6" style={{ fontFamily: '"Inter", sans-serif' }}>Get In Touch</h3>
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
+            <h3
+              className="text-4xl font-bold text-white mb-6"
+              style={{ fontFamily: '"Inter", sans-serif' }}
+            >
+              Get In Touch
+            </h3>
+            <p
+              className="text-gray-300 text-lg mb-8 leading-relaxed"
+              style={{ fontFamily: '"Inter", sans-serif' }}
+            >
               I'm currently looking for internship opportunities and am always interested 
               in collaborating on interesting projects. Whether you have an opportunity, 
               a question, or just want to say hi, I'd love to hear from you!
             </p>
-            <a 
+            <a
               href="mailto:guneet4@ualberta.ca"
               className="inline-flex items-center px-8 py-4 border border-white text-white rounded hover:bg-white hover:text-black transition-all font-mono text-sm hover:-translate-y-1 transform"
             >
@@ -508,9 +601,7 @@ const Portfolio = () => {
 
         {/* Footer */}
         <footer className="py-8 px-4 sm:px-6 lg:px-8 text-center bg-black">
-          <p className="text-gray-400 font-mono text-sm">
-            Built by Guneet
-          </p>
+          <p className="text-gray-400 font-mono text-sm">Built by Guneet</p>
         </footer>
       </main>
     </div>
