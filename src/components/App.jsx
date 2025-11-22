@@ -483,41 +483,77 @@ const Portfolio = () => {
       Some Things I've Built
     </h3>
     <div className="grid gap-12">
-      {[
+            {[
         {
           title: "Signal Vault",
           description:
-            "An offline-first search engine that supports emergency access for 100+ terms during outages, keeping critical information available when connectivity fails. Achieved roughly 90% faster search response via an optimized localStorage-based caching system.",
+            "An offline-first search engine designed for emergency scenarios when internet connectivity is down. Keeps 100+ key terms cached locally and achieves ~90% faster search responses via an optimized localStorage caching layer.",
           tech: ["Python", "JavaScript", "HTML/CSS", "Node.js"],
           status: "In Development",
           demoUrl: "#", // Add your live demo URL here when deployed
           githubUrl: "https://github.com/guneettt/signal-vault"
         },
         {
-          title: "SWC Website (Client)",
+          title: "SWC Automotive Platform",
           description:
-            "A responsive automotive website with 15+ dynamic pages across car listings and services. Integrated Firebase as a CMS so non-technical staff can perform real-time content updates without developer support.",
+            "A comprehensive automotive business website with 15+ dynamic pages for inventory, services, and lead capture. Built with modern React architecture and a Firebase-backed CMS to let non-technical staff update content in real time.",
           tech: ["React", "Tailwind CSS", "Firebase"],
           status: "Client Project",
           demoUrl: "#", // Add your live demo URL here
-          githubUrl: "https://github.com/guneettt" // replace with repo if public
+          githubUrl: "https://github.com/guneettt" // replace with specific repo if public
         },
         {
           title: "Bias Visualizer Chrome Extension",
           description:
-            "A Chrome extension that compares 30+ trending terms across Google Trends and Reddit to surface differences in how topics trend across platforms. Powered by a FastAPI backend that can process up to 500 queries per second for real-time text analysis.",
+            "A Chrome extension that compares trending topics across Google Trends and Reddit to visualize how online conversations differ by platform. Backed by a FastAPI service capable of processing hundreds of queries per second for real-time analysis.",
           tech: ["JavaScript", "HTML/CSS", "FastAPI", "Python"],
           demoUrl: "#", // Add your live demo URL here
           githubUrl: "https://github.com/guneettt" // replace with extension repo if public
         },
         {
-          title: "3D Ray Tracing Renderer",
+          title: "Photorealistic 3D Ray Tracer",
           description:
-            "A ray tracing engine written in C that supports 7+ object types and realistic lighting, optimized to render frames in under 20ms. Uses efficient ray–object intersection logic and Makefile-based builds for clean compilation.",
-          tech: ["C", "Makefile"],
-          demoUrl: "#", // Add link to sample renders or repo README
+            "A ray tracing engine written from scratch in C, supporting multiple geometric primitives and realistic lighting. Optimized ray–object intersection logic renders frames in under 20ms with clean Makefile builds.",
+          tech: ["C", "Makefile", "Computer Graphics", "Linear Algebra"],
+          demoUrl: "#", // Add link to sample renders / README
           githubUrl: "https://github.com/guneettt" // replace with ray tracer repo if public
-        }
+        },
+        {
+          title: "Scalable Tweet Analytics Engine",
+          description:
+            "A high-throughput analytics system for large tweet datasets using MongoDB and Python. Custom schemas and batch-processing pipelines support efficient storage, filtering, and aggregation on tens of thousands of records.",
+          tech: ["Python", "SQL", "MongoDB", "JSON", "Data Processing"],
+          demoUrl: "#", // Add your live demo URL here
+          githubUrl: "https://github.com/guneettt" // replace with specific repo if public
+        },
+        {
+          title: "TrustLine - AI Fraud Detection",
+          description:
+            "An award-winning mobile app that detects deepfake scam calls in real time using machine learning. Built with React Native and FastAPI to deliver accessible scam-call protection for older adults and caregivers.",
+          tech: ["React Native", "FastAPI", "Machine Learning", "Audio Processing"],
+          status: "Award Winner",
+          demoUrl: "#", // Add your live demo / pitch
+          githubUrl: "https://github.com/guneettt" // replace with TrustLine repo if public
+        },
+        {
+          title: "RideSafe - Transit Safety",
+          description:
+            "A real-time transit safety app that uses Vision Transformer (ViT)–based threat detection to monitor live video feeds and trigger alerts. Built during DevCon using React Native and Flask as a fast proof-of-concept for safer public transit.",
+          tech: ["React Native", "Flask", "Computer Vision", "Python"],
+          status: "Hackathon Project",
+          demoUrl: "#", // Add demo / video link
+          githubUrl: "https://github.com/guneettt" // replace with RideSafe repo if public
+        },
+                {
+          title: "Whimsy",
+          description:
+            "A collaborative Android social media app enabling mood-based posts, interactive comments, and real-time emotional feeds. Features a privacy-aware following system, editable mood journals, and an interactive mood map with filters by time, user, or location. Integrated DALL·E API to generate creative mood-themed images and boost engagement.",
+          tech: ["Java", "Android Studio", "Firebase", "DALL·E API"],
+          status: "Group Project",
+          demoUrl: "#", // add link if you deploy a demo
+          githubUrl: "https://github.com/guneettt" // replace with actual repo if public
+        },
+
       ].map((project, index) => {
         return (
           <div key={index} className="group relative">
@@ -559,7 +595,10 @@ const Portfolio = () => {
               </p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
-                  <span key={tech} className="font-mono text-sm text-gray-300 bg-gray-800 border border-gray-600 px-3 py-1 rounded">
+                  <span
+                    key={tech}
+                    className="font-mono text-sm text-gray-300 bg-gray-800 border border-gray-600 px-3 py-1 rounded"
+                  >
                     {tech}
                   </span>
                 ))}
