@@ -509,7 +509,7 @@ const Portfolio = () => {
           tech: ["React", "Tailwind CSS", "Firebase"],
           status: "Client Project",
           demoUrl: "#", // Add your live demo URL here
-          githubUrl: "https://github.com/guneettt" // replace with specific repo if public
+          
         },
         {
           title: "Bias Visualizer Chrome Extension",
@@ -517,7 +517,7 @@ const Portfolio = () => {
             "A Chrome extension that compares trending topics across Google Trends and Reddit to visualize how online conversations differ by platform. Backed by a FastAPI service capable of processing hundreds of queries per second for real-time analysis.",
           tech: ["JavaScript", "HTML/CSS", "FastAPI", "Python"],
           demoUrl: "#", // Add your live demo URL here
-          githubUrl: "https://github.com/guneettt" // replace with extension repo if public
+          githubUrl: "https://github.com/guneettt/bias-visualizer" 
         },
         {
           title: "Photorealistic 3D Ray Tracer",
@@ -525,7 +525,7 @@ const Portfolio = () => {
             "A ray tracing engine written from scratch in C, supporting multiple geometric primitives and realistic lighting. Optimized ray–object intersection logic renders frames in under 20ms with clean Makefile builds.",
           tech: ["C", "Makefile", "Computer Graphics", "Linear Algebra"],
           demoUrl: "#", // Add link to sample renders / README
-          githubUrl: "https://github.com/guneettt" // replace with ray tracer repo if public
+          
         },
         {
           title: "Scalable Tweet Analytics Engine",
@@ -533,7 +533,7 @@ const Portfolio = () => {
             "A high-throughput analytics system for large tweet datasets using MongoDB and Python. Custom schemas and batch-processing pipelines support efficient storage, filtering, and aggregation on tens of thousands of records.",
           tech: ["Python", "SQL", "MongoDB", "JSON", "Data Processing"],
           demoUrl: "#", // Add your live demo URL here
-          githubUrl: "https://github.com/guneettt" // replace with specific repo if public
+          
         },
         {
           title: "TrustLine - AI Fraud Detection",
@@ -542,7 +542,7 @@ const Portfolio = () => {
           tech: ["React Native", "FastAPI", "Machine Learning", "Audio Processing"],
           status: "Award Winner",
           demoUrl: "#", // Add your live demo / pitch
-          githubUrl: "https://github.com/guneettt" // replace with TrustLine repo if public
+          githubUrl: "https://github.com/WanderingWalnut/Trustline" 
         },
         {
           title: "RideSafe - Transit Safety",
@@ -550,8 +550,9 @@ const Portfolio = () => {
             "A real-time transit safety app that uses Vision Transformer (ViT)–based threat detection to monitor live video feeds and trigger alerts. Built during DevCon using React Native and Flask as a fast proof-of-concept for safer public transit.",
           tech: ["React Native", "Flask", "Computer Vision", "Python"],
           status: "Hackathon Project",
+          status: "2nd Place @ DevCon",
           demoUrl: "#", // Add demo / video link
-          githubUrl: "https://github.com/guneettt" // replace with RideSafe repo if public
+          githubUrl: "https://github.com/mikejattu/RideSafe"
         },
                 {
           title: "Whimsy",
@@ -560,7 +561,7 @@ const Portfolio = () => {
           tech: ["Java", "Android Studio", "Firebase", "DALL·E API"],
           status: "Group Project",
           demoUrl: "#", // add link if you deploy a demo
-          githubUrl: "https://github.com/guneettt" // replace with actual repo if public
+          
         },
 
       ].map((project, index) => {
