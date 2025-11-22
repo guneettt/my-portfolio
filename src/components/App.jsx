@@ -569,16 +569,7 @@ const Portfolio = () => {
                     </span>
                   )}
                 </div>
-                <div className="flex space-x-4">
-                  <a
-                    href={project.demoUrl}
-                    title="Live Demo"
-                    className="text-gray-400 hover:text-white transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink size={20} />
-                  </a>
+                <div className="flex items-center gap-4">
                   <a
                     href={project.githubUrl}
                     title="GitHub Repository"
